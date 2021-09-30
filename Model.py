@@ -43,10 +43,10 @@ pipeline_obj.predict(data[X])
 from sklearn.externals import joblib
 
 # %%
-joblib.dump(pipeline_obj,'RFModelforMPG.pkl')
+joblib.dump(pipeline_obj,'./Model/RFModelforMPG.pkl')
 
 # %%
-modelReload=joblib.load('RFModelforMPG.pkl')
+modelReload=joblib.load('./Model/RFModelforMPG.pkl')
 
 # %%
 modelReload.predict(data[X])
